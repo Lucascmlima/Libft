@@ -6,11 +6,15 @@
 /*   By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 12:11:21 by lcarvalh          #+#    #+#             */
-/*   Updated: 2025/04/10 21:20:42 by lcarvalh         ###   ########.fr       */
+/*   Updated: 2025/04/12 20:09:14 by lcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <ctype.h>
+#include <stdio.h>
+#include <math.h>
 
 int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
-}
+}=
