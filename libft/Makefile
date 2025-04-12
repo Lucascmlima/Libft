@@ -6,7 +6,7 @@
 #    By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/10 20:38:35 by lcarvalh          #+#    #+#              #
-#    Updated: 2025/04/10 22:05:12 by lcarvalh         ###   ########.fr        #
+#    Updated: 2025/04/12 19:17:48 by lcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,29 +16,26 @@ CC = cc
 
 CFLAGS = -Wall -Wextra -Werror
 
-SRC = src/ft_isalpha.c \
-	src/ft_isdigit.c \
-	src/ft_isalnum.c \
-	src/ft_isascii.c \
-	src/ft_isprint.c \
-	src/ft_strlen.c \
-	src/ft_memset.c \
-	src/ft_bzero.c \
-	src/ft_memcpy.c \
-	src/ft_memmove.c \
-	src/ft_strlcat.c \
-	src/ft_strlcpy.c \
-	src/ft_toupper.c \
-	src/ft_tolower.c \
-	src/ft_strchr.c \
-	src/ft_strrchr.c \
-	src/ft_strncmp.c \
-	src/ft_memchr.c \
-	src/ft_memcmp.c \
-	src/ft_strnstr.c \
-	src/ft_atoi.c \
-	src/ft_calloc.c \
-	src/ft_strdup.c 
+SRC = ft_isalpha.c \
+	ft_isdigit.c \
+	ft_isalnum.c \
+	ft_isascii.c \
+	ft_isprint.c \
+	ft_strlen.c \
+	ft_memset.c \
+	ft_bzero.c \
+	ft_memcpy.c \
+	ft_memmove.c \
+	ft_memcmp.c \
+	ft_strlcat.c \
+	ft_strlcpy.c \
+	ft_toupper.c \
+	ft_tolower.c \
+	ft_strchr.c \
+	ft_strncmp.c \
+	ft_strrchr.c \
+	ft_strnstr.c \
+	ft_atoi.c 
 
 OBJ = $(SRC:.c=.o)
 
