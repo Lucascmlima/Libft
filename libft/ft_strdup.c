@@ -1,30 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lcarvalh <lcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/10 13:18:48 by lcarvalh          #+#    #+#             */
-/*   Updated: 2025/04/10 13:26:51 by lcarvalh         ###   ########.fr       */
+/*   Created: 2025/04/14 09:51:34 by lcarvalh          #+#    #+#             */
+/*   Updated: 2025/04/14 11:00:36 by lcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *dest,	const void *src, size_t n)
+char	*ft_strdup(const char *s1)
 {
-	size_t			i;
-	unsigned char	*ptr_dest;
-	unsigned char	*ptr_src;
+	size_t	lens1;
+	char	*s1cpy;
 
-	i = 0;
-	ptr_dest = (unsigned char *)dest;
-	ptr_src = (unsigned char *)src;
-	while (i < n)
-	{
-		ptr_dest[i] = ptr_src[i];
-		i++;
-	}
-	return (dest);
+	lens1 = ft_strlen(s1) + 1;
+	s1cpy = (char *)malloc(lens1 * sizeof(char));
+	if (s1cpy == NULL)
+		return (NULL);
+	ft_strlcpy(s1cpy, s1, lens1);
+	return (s1cpy);
 }
