@@ -1,18 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main_check_cheating.c                              :+:      :+:    :+:   */
+/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/18 20:34:46 by lcarvalh          #+#    #+#             */
-/*   Updated: 2025/04/18 20:34:50 by lcarvalh         ###   ########.fr       */
+/*   Created: 2025/04/18 13:13:19 by lcarvalh          #+#    #+#             */
+/*   Updated: 2025/04/18 20:11:05 by lcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	main(void)
+void	ft_putstr_fd(char *s, int fd)
 {
-	return (0);
+	if (!s)
+		return ;
+	write(fd, s, ft_strlen(s));
 }

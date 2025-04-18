@@ -1,3 +1,6 @@
 {
-	"makefile.makefilePath": "/home/lucascml/Documents/meu git/gitlib/libft"
+	"makefile.makefilePath": "/home/lucascml/Documents/meu git/gitlib/libft",
+	"files.associations": {
+		"libft.h": "c"
+	}
 }

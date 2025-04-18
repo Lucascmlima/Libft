@@ -1,0 +1,7 @@
+libftTester/
+*.o
+*.a
+*.exe
+*.out
+.DS_Store
+main_check_cheating.c

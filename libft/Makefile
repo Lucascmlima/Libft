@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lcarvalh <lcarvalh@student.42lisboa.com    +#+  +:+       +#+         #
+#    By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/10 20:38:35 by lcarvalh          #+#    #+#              #
-#    Updated: 2025/04/17 11:00:51 by lcarvalh         ###   ########.fr        #
+#    Updated: 2025/04/18 20:34:42 by lcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -44,6 +44,11 @@ SRC = ft_isalpha.c \
 	ft_calloc.c \
 	ft_split.c \
 	ft_itoa.c \
+	ft_striteri.c \
+	ft_putchar_fd.c \
+	ft_putstr_fd.c \
+	ft_putendl_fd.c \
+	ft_putnbr_fd.c \
 	ft_atoi.c 
 
 OBJ = $(SRC:.c=.o)

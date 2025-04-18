@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcarvalh <lcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
+/*   By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 14:29:14 by lcarvalh          #+#    #+#             */
-/*   Updated: 2025/04/17 11:00:47 by lcarvalh         ###   ########.fr       */
+/*   Updated: 2025/04/18 17:22:47 by lcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,11 @@ char	*ft_strrchr(const char *str, int c);
 char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+void	ft_striteri(char *s, void(*f)(unsigned int, char*));
+void	ft_putchar_fd(char c, int fd);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putendl_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
 
 // 🧩 Funções de manipulação de memória
 void	ft_bzero(void *s, size_t n);
@@ -61,11 +66,11 @@ void	*ft_calloc(size_t count, size_t size);
 char	*ft_itoa(int n);
 
 // 🎯 Funções bônus — Linked List
-/*typedef struct s_list
-{
-	void			*content;
-	struct s_list	*next;
-}	t_list;*/
+// *typedef struct s_list
+// {
+// 	void			*content;
+// 	struct s_list	*next;
+// }	t_list;
 
 //t_list	*ft_lstnew(void *content);
 //void	ft_lstadd_front(t_list **lst, t_list *new);
