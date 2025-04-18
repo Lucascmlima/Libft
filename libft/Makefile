@@ -6,7 +6,7 @@
 #    By: lcarvalh <lcarvalh@student.42lisboa.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/10 20:38:35 by lcarvalh          #+#    #+#              #
-#    Updated: 2025/04/15 16:35:09 by lcarvalh         ###   ########.fr        #
+#    Updated: 2025/04/17 11:00:51 by lcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,8 +40,10 @@ SRC = ft_isalpha.c \
 	ft_strjoin.c \
 	ft_strtrim.c \
 	ft_substr.c \
+	ft_strmapi.c \
 	ft_calloc.c \
 	ft_split.c \
+	ft_itoa.c \
 	ft_atoi.c 
 
 OBJ = $(SRC:.c=.o)
