@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/14 14:05:54 by lcarvalh          #+#    #+#             */
-/*   Updated: 2025/04/19 00:00:25 by lcarvalh         ###   ########.fr       */
+/*   Created: 2025/02/14 14:05:54 by lcarvalh          #+#    #+#             */
+/*   Updated: 2025/04/19 13:35:21 by lcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ static void		free_all(char **arr);
 
 static char		**aloc_w(const char *s, char c, size_t words);
 
-static int		fill_words(const char *s, char c, size_t words, char **res);
+static int		f_w(const char *s, char c, size_t words, char **res);
 
 static size_t	cw(const char *s, char c);
 
@@ -34,7 +34,7 @@ char	**ft_split(char const *s, char c)
 	return (res);
 }
 
-void	free_all(char **res)
+static void	free_all(char **res)
 {
 	size_t	i;
 
@@ -56,7 +56,7 @@ static char	**aloc_w(const char *s, char c, size_t words)
 	if (!res)
 		return (NULL);
 	i = 0;
-	if (!fill_words(s, c, words, res))
+	if (!f_w(s, c, words, res))
 	{
 		free_all(res);
 		return (NULL);
@@ -64,7 +64,7 @@ static char	**aloc_w(const char *s, char c, size_t words)
 	return (res);
 }
 
-static int	fill_words(const char *s, char c, size_t words, char **res)
+static int	f_w(const char *s, char c, size_t words, char **res)
 {
 	size_t	i;
 	size_t	j;
