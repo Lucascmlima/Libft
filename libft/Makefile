@@ -6,7 +6,7 @@
 #    By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/10 20:38:35 by lcarvalh          #+#    #+#              #
-#    Updated: 2025/04/20 18:37:09 by lcarvalh         ###   ########.fr        #
+#    Updated: 2025/04/20 21:35:39 by lcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -40,13 +40,6 @@ SRC = ft_isalpha.c \
       ft_strdup.c \
       ft_substr.c \
       ft_strjoin.c \
-clean:
-	rm -f $(OBJ) $(BONUS_OBJ)
-
-fclean: clean
-	rm -f $(NAME)
-
-re: fclean all
       ft_putstr_fd.c \
       ft_putendl_fd.c \
       ft_putnbr_fd.c
@@ -58,6 +51,7 @@ BONUS_SRC = ft_lstnew.c \
 			ft_lstlast.c \
 			ft_lstdelone.c \
 			ft_lstclear.c \
+			ft_lstiter.c \
 
 OBJ         = $(SRC:.c=.o)
 BONUS_OBJ   = $(BONUS_SRC:.c=.o)
@@ -67,7 +61,9 @@ all: $(NAME)
 $(NAME): $(OBJ)
 	ar rcs $(NAME) $(OBJ)
 
-bonus: $(OBJ) $(BONUS_OBJ)
+bonus: .bonus
+
+.bonus: $(OBJ) $(BONUS_OBJ)
 	ar rcs $(NAME) $(OBJ) $(BONUS_OBJ)
 	touch .bonus
 
@@ -75,7 +71,7 @@ bonus: $(OBJ) $(BONUS_OBJ)
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(BONUS_OBJ)
+	rm -f $(OBJ) $(BONUS_OBJ) .bonus
 
 fclean: clean
 	rm -f $(NAME)
