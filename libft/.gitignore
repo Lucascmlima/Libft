@@ -4,4 +4,5 @@ libftTester/
 *.exe
 *.out
 .DS_Store
+.vscode
 main_check_cheating.c
