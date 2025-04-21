@@ -6,15 +6,13 @@
 /*   By: lcarvalh <lcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 14:05:54 by lcarvalh          #+#    #+#             */
-/*   Updated: 2025/04/21 09:56:52 by lcarvalh         ###   ########.fr       */
+/*   Updated: 2025/04/21 10:52:07 by lcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 static void		free_all(char **arr);
-
-static char		**aloc_w(const char *s, char c, size_t words);
 
 static int		f_w(const char *s, char c, size_t words, char **res);
 
@@ -28,9 +26,14 @@ char	**ft_split(char const *s, char c)
 	if (!s)
 		return (NULL);
 	words = cw(s, c);
-	res = aloc_w(s, c, words);
+	res = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!res)
 		return (NULL);
+	if (!f_w(s, c, words, res))
+	{
+		free_all(res);
+		return (NULL);
+	}
 	return (res);
 }
 
@@ -45,21 +48,6 @@ static void	free_all(char **res)
 		i++;
 	}
 	free(res);
-}
-
-static char	**aloc_w(const char *s, char c, size_t words)
-{
-	char	**res;
-
-	res = (char **)malloc(sizeof(char *) * (words + 1));
-	if (!res)
-		return (NULL);
-	if (!f_w(s, c, words, res))
-	{
-		free_all(res);
-		return (NULL);
-	}
-	return (res);
 }
 
 static int	f_w(const char *s, char c, size_t words, char **res)
