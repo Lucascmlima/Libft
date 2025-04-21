@@ -82,6 +82,11 @@ Use testadores externos como:
 
 ---
 
+![Screenshot from 2025-04-21 10-24-17](https://github.com/user-attachments/assets/88668e25-7496-4e25-bcf4-ab705bf69dc0)
+![Screenshot from 2025-04-21 10-26-51](https://github.com/user-attachments/assets/5eeb6fa6-f4db-4781-baaa-20856dd6c849)
+
+---
+
 ## 📜 Licença
 
 Este projeto está sob a licença MIT.
