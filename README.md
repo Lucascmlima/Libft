@@ -3,8 +3,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/status-finished-success?style=for-the-badge&logo=42&logoColor=white" />
-  <img src="https://img.shields.io/github/languages/top/Lucascml/libft?style=for-the-badge&color=blue" />
-  <img src="https://img.shields.io/github/repo-size/Lucascml/libft?style=for-the-badge&color=orange" />
 </p>
 
 ---
