@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lcarvalh <lcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/14 14:05:54 by lcarvalh          #+#    #+#             */
-/*   Updated: 2025/04/19 13:35:21 by lcarvalh         ###   ########.fr       */
+/*   Updated: 2025/04/21 09:56:52 by lcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,12 +50,10 @@ static void	free_all(char **res)
 static char	**aloc_w(const char *s, char c, size_t words)
 {
 	char	**res;
-	size_t	i;
 
 	res = (char **)malloc(sizeof(char *) * (words + 1));
 	if (!res)
 		return (NULL);
-	i = 0;
 	if (!f_w(s, c, words, res))
 	{
 		free_all(res);

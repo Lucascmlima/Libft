@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+        */
+/*   By: lcarvalh <lcarvalh@student.42lisboa.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 14:29:14 by lcarvalh          #+#    #+#             */
-/*   Updated: 2025/04/20 22:27:17 by lcarvalh         ###   ########.fr       */
+/*   Updated: 2025/04/21 09:54:30 by lcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,7 @@ int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_itoa(int n);
 
-// 🎯 Funções bônus — Linked List
+// 🎯 Funções bônus
 typedef struct s_list
 {
 	void			*content;
