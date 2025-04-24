@@ -6,7 +6,7 @@
 /*   By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/10 14:19:20 by lcarvalh          #+#    #+#             */
-/*   Updated: 2025/04/20 18:36:19 by lcarvalh         ###   ########.fr       */
+/*   Updated: 2025/04/24 19:42:03 by lcarvalh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,4 +32,3 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 		dst[len_dst + i] = '\0';
 	return (len_dst + len_src);
 }
-	

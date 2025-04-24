@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: lcarvalh <lcarvalh@student.42lisboa.com    +#+  +:+       +#+         #
+#    By: lcarvalh <lcarvalh@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/10 20:38:35 by lcarvalh          #+#    #+#              #
-#    Updated: 2025/04/21 10:55:53 by lcarvalh         ###   ########.fr        #
+#    Updated: 2025/04/23 17:49:36 by lcarvalh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -77,7 +77,7 @@ bonus: .bonus
 	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
-	rm -f $(OBJ) $(BONUS_OBJ) .bonus
+	rm -f $(OBJ) $(BONUS_OBJ)
 
 fclean: clean
 	rm -f $(NAME)
